@@ -64,10 +64,10 @@ ax[0].loglog(r, p["rho"]); ax[0].set_ylabel(r"$\rho$ [g cm$^{-3}$]")
 ax[1].loglog(r, p["T"]);   ax[1].set_ylabel("T [K]")
 ax[2].loglog(r, p["v"]/1e5, label="v")
 ax[2].loglog(r, p["c_s_ad"]/1e5, "--", label=r"$c_{s,\rm ad}$")
-ax[2].set_ylabel("km/s"); ax[2].legend()
+ax[2].set_ylabel("speed [km/s]"); ax[2].legend()
 for a in ax:
-    a.axvline(d["r_critical"]/hf.Rsun, color="C2", ls=":")   # sonic point
-    a.axvline(d["r_match"]/hf.Rsun, color="C1", ls=":")      # QA -> FLD seam
+    a.axvline(d["r_critical"]/hf.Rsun, color="gray", ls=":")    # sonic point
+    a.axvline(d["r_match"]/hf.Rsun, color="gray", ls="--")      # QA -> FLD seam
     a.set_xlabel(r"$r/R_\odot$")
 plt.tight_layout(); plt.show()
 
