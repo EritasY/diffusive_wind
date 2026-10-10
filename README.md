@@ -86,15 +86,7 @@ Setting `kappa_const` below `bootstrap_kappa_const` (default $1.5\times10^{-3}$)
 
 ## Physics
 
-With $s=\ln r$, $Y = d\ln\rho/ds$, $Z = d\ln T/ds$ and $v = \dot M/4\pi r^2\rho$:
-
-$$
-(v^2 - f_2)\,Y = f_1 Z + \frac{GM_r}{r} - 2v^2,\qquad
-\frac{dL}{ds} = \dot M\,(f_1Y - f_3Z),\qquad
-\frac{dM_r}{ds} = 4\pi r^3\rho,
-$$
-
-with $f_1 = (T/\rho)(\partial P/\partial T)_\rho$, $f_2 = (\partial P/\partial\rho)_T$, $f_3 = T(\partial e/\partial T)_\rho$ from the total (gas + ionisation + radiation) EOS, and
+See ``Notes.pdf``.
 
 $$
 \kappa_R = 0.4\,x + 8\times10^{22}\rho T^{-7/2}x^2 + \kappa_0 .
@@ -111,7 +103,7 @@ where $A = 16\pi acrT^4/3\kappa\rho$ and $c_s^2 = f_2 + f_1^2/f_3$. Because $L$ 
 
 **Energy anchor.** $\dot E = \dot M B(r_{\rm in}) + L_{\rm core}$ with $B = v^2/2 + h + \Phi$ is held fixed through both zones.
 
-**FLD zone.** Levermore–Pomraning closure: $q = L/(4\pi r^2 c a T^4) = \lambda(\mathcal R)\mathcal R$, $\lambda = (2+\mathcal R)/(6+3\mathcal R+\mathcal R^2)$, $Z = -\kappa\rho r\mathcal R/4$. The BVP has 5 ODEs $(\ln\rho,\ln T,L,M_r,\tau)$ and a free outer radius, so it needs 6 boundary conditions:
+**FLD zone.** $q = L/(4\pi r^2 c a T^4) = \lambda(\mathcal R)\mathcal R$, $\lambda = (2+\mathcal R)/(6+3\mathcal R+\mathcal R^2)$, $Z = -\kappa\rho r\mathcal R/4$. The BVP has 5 ODEs $(\ln\rho,\ln T,L,M_r,\tau)$ and a free outer radius, so it needs 6 boundary conditions:
 
 | Seam ($r_{\rm match}$) | Outer surface |
 |---|---|
